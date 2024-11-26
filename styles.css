@@ -107,13 +107,13 @@ a > img {
 #media {
   background-color: var(--background-color3);
   width: 100%;
-  height: 500px;
+  height: 300px;
   text-align: center;
   margin: auto;
   align-content: center;
 }
 h3 {
-  font-size: 70px;
+  font-size: 40px;
   color: var(--text-color);
 }
 .coffee {
@@ -125,13 +125,14 @@ i {
 .social-media {
   display: flex;
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 15px;
   color: var(--text-color);
   justify-content: center;
 }
 
 .social-info {
   display: flex;
+  font-size: 13px;
 }
 .grid-items:hover {
   transform: scale(1.1);
@@ -150,22 +151,39 @@ hr {
   background-color: var(--background-color3);
   color: var(--text-color);
   width: 100%;
-  height: 60px;
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 10px;
-}
+  }
 .text:hover::before {
   content: "< ";
   color: var(--background-color1);
-  font-weight: 1000;
+  font-weight: 600;
 }
 .text:hover::after {
   content: " />";
   color: var(--background-color1);
   font-weight: 1000;
+}
+@media (max-width: 1080px) {
+  #nav-bar,
+  #welcome-section,
+  #projects,
+  #work {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 100px) {
+  .social-media,
+  .social-info {
+    font-size: 10px;
+  }
+  #footer {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 800px) {
